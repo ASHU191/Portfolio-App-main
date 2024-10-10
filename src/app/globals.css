@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #90EE90;
+  --primary-black: #202225;
+  --text-color: #ccc;
+  --card-bg: #414549;
+  --arrow-color: #f0f0f080;
+  --hero-text: #f0f0f080;
+  --card-blur-layer: rgba(0, 0, 0.1), rgba(0, 0, 0, 0.2);
+  --menu-bg: #202225e7;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #202225af;
+  backdrop-filter: blur(16px);
+  z-index: 99;
+}
+
+.transtion {
+  transition: all 0.4s ease-in-out;
+}
+
+.projectCard {
+  position: relative;
+  border-radius: 25px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  transition: ease-in-out;
+}
+
+.projectCard::after {
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to top, var(--card-blur-layer)),
+    url("/cardbg.webp") no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(18px);
+  opacity: 0.4;
+}
