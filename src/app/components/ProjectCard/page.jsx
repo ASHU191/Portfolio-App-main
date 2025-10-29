@@ -7,6 +7,157 @@ const ProjectCard = () => {
   return (
     <div className="parent w-full md:w-[90%] flex flex-col justify-center items-center gap-12">
 
+{/* ==================== Project 1 ==================== */}
+<ProjectCardAnimation>
+  <div className="w-full flex flex-col lg:flex-row gap-6">
+    <div className="project-detail w-full h-full lg:w-[50%] flex justify-center flex-col gap-2">
+      <h1 className="text-2xl md:text-[33px] w-full text-white font-semibold">
+        01 -> ColdMail Genie – AI Outreach SaaS
+      </h1>
+      <p className="text-[#cbd5e1] text-md md:text-lg leading-12 mt-2">
+        ColdMail Genie is an AI-powered outreach tool that generates personalized
+        cold DMs, emails, and proposals for freelancers and agencies. Built with
+        React, TypeScript, and Tailwind CSS, it features Gemini AI integration,
+        local storage, and a smooth, responsive UI with modern animations. 🧞‍♂️
+      </p>
+
+      <div className="technology mt-3">
+        <h2 className="text-xl text-[--primary-color]">Tech Stacks :</h2>
+        <div className="tech_stack w-full flex flex-wrap gap-4 mt-3">
+          <button className="text-[--text-color] text-sm border px-4 py-1 rounded hover:border-[--primary-color] hover:text-[--primary-color]">React</button>
+          <button className="text-[--text-color] text-sm border px-4 py-1 rounded hover:border-[--primary-color] hover:text-[--primary-color]">TypeScript</button>
+          <button className="text-[--text-color] text-sm border px-4 py-1 rounded hover:border-[--primary-color] hover:text-[--primary-color]">Tailwind CSS</button>
+          <button className="text-[--text-color] text-sm border px-4 py-1 rounded hover:border-[--primary-color] hover:text-[--primary-color]">Shadcn/UI</button>
+        </div>
+      </div>
+
+      <div className="button w-full flex flex-wrap justify-center md:justify-start items-center gap-4 mt-8">
+        <Link
+          className="flex items-center px-2 md:px-6 py-1 md:py-3 gap-2 transition duration-150 ease-in-out border-2 border-indigo-500 rounded-md text-[#fff] bg-indigo-500 hover:bg-transparent hover:border-[--text-color]"
+          target="_blank"
+          href="https://coldmail-genie.vercel.app/"
+        >
+          <span>Preview Link</span>
+          <RiArrowRightUpLine size={23} className="inline-block" />
+        </Link>
+        <Link
+          className="flex items-center px-2 md:px-6 py-1 md:py-3 gap-2 transition duration-150 ease-in-out border-2 border-indigo-500 rounded-md text-[#fff] bg-indigo-500 hover:bg-transparent hover:border-[--text-color]"
+          target="_blank"
+          href="https://github.com/ASHU191/ColdMail-Genie-AI"
+        >
+          <RiGithubFill size={23} className="inline-block" />
+          <span>Source Code</span>
+        </Link>
+      </div>
+    </div>
+
+    <div className="project-img w-full lg:w-[50%] md:block">
+      <div className="w-full h-full flex justify-center items-center">
+        <Image src="/coldmail-genie.png" width={500} height={500} alt="ColdMail Genie" />
+      </div>
+    </div>
+  </div>
+</ProjectCardAnimation>
+
+{/* ==================== Project 2 ==================== */}
+<ProjectCardAnimation>
+  <div className="w-full flex flex-col lg:flex-row gap-6">
+    <div className="project-detail w-full h-full lg:w-[50%] flex justify-center flex-col gap-2">
+      <h1 className="text-2xl md:text-[33px] w-full text-white font-semibold">
+        02 -> YouTube Thumbnail Downloader – SEO Optimized SaaS
+      </h1>
+      <p className="text-[#cbd5e1] text-md md:text-lg leading-12 mt-2">
+        A multilingual, SEO-optimized YouTube Thumbnail Downloader built using
+        Next.js, TypeScript, and Tailwind CSS. Includes i18n support, server-side
+        rendering, and a smooth, responsive interface for users worldwide. 🎬
+      </p>
+
+      <div className="technology mt-3">
+        <h2 className="text-xl text-[--primary-color]">Tech Stacks :</h2>
+        <div className="tech_stack w-full flex flex-wrap gap-4 mt-3">
+          <button className="text-[--text-color] text-sm border px-4 py-1 rounded hover:border-[--primary-color] hover:text-[--primary-color]">Next.js</button>
+          <button className="text-[--text-color] text-sm border px-4 py-1 rounded hover:border-[--primary-color] hover:text-[--primary-color]">TypeScript</button>
+          <button className="text-[--text-color] text-sm border px-4 py-1 rounded hover:border-[--primary-color] hover:text-[--primary-color]">Tailwind CSS</button>
+        </div>
+      </div>
+
+      <div className="button w-full flex flex-wrap justify-center md:justify-start items-center gap-4 mt-8">
+        <Link
+          className="flex items-center px-2 md:px-6 py-1 md:py-3 gap-2 transition duration-150 ease-in-out border-2 border-indigo-500 rounded-md text-[#fff] bg-indigo-500 hover:bg-transparent hover:border-[--text-color]"
+          target="_blank"
+          href="https://www.thumbnaildownloaderyoutube.site/"
+        >
+          <span>Preview Link</span>
+          <RiArrowRightUpLine size={23} className="inline-block" />
+        </Link>
+        <Link
+          className="flex items-center px-2 md:px-6 py-1 md:py-3 gap-2 transition duration-150 ease-in-out border-2 border-indigo-500 rounded-md text-[#fff] bg-indigo-500 hover:bg-transparent hover:border-[--text-color]"
+          target="_blank"
+          href="https://github.com/ASHU191/YouTube-Thumbnail-Downloader"
+        >
+          <RiGithubFill size={23} className="inline-block" />
+          <span>Source Code</span>
+        </Link>
+      </div>
+    </div>
+
+    <div className="project-img w-full lg:w-[50%] md:block">
+      <div className="w-full h-full flex justify-center items-center">
+        <Image src="/yt-thumb.png" width={500} height={500} alt="YouTube Thumbnail Downloader" />
+      </div>
+    </div>
+  </div>
+</ProjectCardAnimation>
+
+{/* ==================== Project 3 ==================== */}
+<ProjectCardAnimation>
+  <div className="w-full flex flex-col lg:flex-row gap-6">
+    <div className="project-detail w-full h-full lg:w-[50%] flex justify-center flex-col gap-2">
+      <h1 className="text-2xl md:text-[33px] w-full text-white font-semibold">
+        03 -> BMI Interior
+      </h1>
+      <p className="text-[#cbd5e1] text-md md:text-lg leading-12 mt-2">
+        A modern and responsive interior design website built for a UAE-based
+        brand using Next.js, TypeScript, and Tailwind CSS. Showcases projects,
+        services, and testimonials with a smooth, elegant user experience. 🏠
+      </p>
+
+      <div className="technology mt-3">
+        <h2 className="text-xl text-[--primary-color]">Tech Stacks :</h2>
+        <div className="tech_stack w-full flex flex-wrap gap-4 mt-3">
+          <button className="text-[--text-color] text-sm border px-4 py-1 rounded hover:border-[--primary-color] hover:text-[--primary-color]">Next.js</button>
+          <button className="text-[--text-color] text-sm border px-4 py-1 rounded hover:border-[--primary-color] hover:text-[--primary-color]">TypeScript</button>
+          <button className="text-[--text-color] text-sm border px-4 py-1 rounded hover:border-[--primary-color] hover:text-[--primary-color]">Tailwind CSS</button>
+        </div>
+      </div>
+
+      <div className="button w-full flex flex-wrap justify-center md:justify-start items-center gap-4 mt-8">
+        <Link
+          className="flex items-center px-2 md:px-6 py-1 md:py-3 gap-2 transition duration-150 ease-in-out border-2 border-indigo-500 rounded-md text-[#fff] bg-indigo-500 hover:bg-transparent hover:border-[--text-color]"
+          target="_blank"
+          href="https://www.bmiinterior.com/"
+        >
+          <span>Preview Link</span>
+          <RiArrowRightUpLine size={23} className="inline-block" />
+        </Link>
+        <Link
+          className="flex items-center px-2 md:px-6 py-1 md:py-3 gap-2 transition duration-150 ease-in-out border-2 border-indigo-500 rounded-md text-[#fff] bg-indigo-500 hover:bg-transparent hover:border-[--text-color]"
+          target="_blank"
+          href="https://github.com/ASHU191/BMI-Interior"
+        >
+          <RiGithubFill size={23} className="inline-block" />
+          <span>Source Code</span>
+        </Link>
+      </div>
+    </div>
+
+    <div className="project-img w-full lg:w-[50%] md:block">
+      <div className="w-full h-full flex justify-center items-center">
+        <Image src="/bmi.png" width={500} height={500} alt="BMI Interior" />
+      </div>
+    </div>
+  </div>
+</ProjectCardAnimation>
 
       <ProjectCardAnimation>
         <div className="w-full flex flex-col lg:flex-row gap-6">
